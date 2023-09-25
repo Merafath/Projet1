@@ -1,0 +1,40 @@
+* {
+    font-family:'Open Sans';
+    text-decoration: none;
+    list-style: none;
+    padding: 0px;
+    margin: 0px;
+    background-color: #FBFFF1;
+}
+
+header {
+    
+}
+
+nav {
+    display:flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+ul{
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+li{
+   
+}
+
+nav h1 {
+    margin-top: 2rem;
+}
+
+body {
+
+}
+
+body p {
+
+}
