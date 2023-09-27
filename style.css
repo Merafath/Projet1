@@ -1,5 +1,8 @@
 :root{
-    background-color: #FBFFF1;
+    
+    --primarycolor:#d319e769;
+    --secondarycolor:rgb(240, 240, 240);
+    
 }
 * {
     font-family:'Open Sans';
@@ -7,22 +10,33 @@
     list-style: none;
     padding: 0px;
     margin: 0px;
-
 }
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+body{
+    background: linear-gradient(30deg, var(--secondarycolor),var(--primarycolor) ); 
+}
+
+
 
 /* NAVBAR */
 
 nav {
     display:flex;
     justify-content: space-between;
+  
 
 }
 
 #title_navbar{
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
+    margin-right: 9%;
     
     
 }
@@ -33,7 +47,7 @@ nav {
     margin-right: 2%;
 }
 .active {
-    color: #C2AFF0;
+    color: #227C9D;
 
 
   }
@@ -42,23 +56,28 @@ ul {
     align-items: center;
     gap: 4rem;
     margin-left: 2%;
-
+    
 }
 
+li {
+    font-weight: bold;
+}
 
 nav ul a {
     color: #000000;
-
+    
 }
 
 
 div h1{
+
     font-size: 32px;
     font-family: 'Open Sans extrabold';
 
     
 }
 div h2{
+   
     font-family: 'Open Sans extrabold';
 }
 /* CAROUSEL */
@@ -85,7 +104,7 @@ div h2{
     top: 50%;
     transform: translateY(-50%);
     cursor: pointer;
-    transition: 0.3 all ease-in-out;
+    transition: all ease-in-out;
 }
 
 .slider__nav__button:hover {
@@ -173,21 +192,33 @@ section {
 section.container{
     justify-content: center;
     display: grid;
-    gap: 1rem;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    gap: 3rem 1rem;
     grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+    margin-bottom: 100px;
+
 
 }
-section.container img{
-    max-width: 180px;
-    max-height: 180px;
-    border-radius: 50%;
-}
+
 section.container div{
     display: flex;
-    justify-content: center;
+    margin-left: 10%;
+    
 }
 
+img.media-imgs:hover{       
+    border-radius: 100px;
+    -webkit-animation-name: greenPulse;
+    -webkit-animation-duration: 2s;
+    -webkit-animation-iteration-count: 1;
+    -webkit-box-shadow: 0 0 18px #227C9D;
+}
+.container h3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 2rem;
+}
 /* FOOTER */
 footer {
     display: flex;
@@ -199,4 +230,6 @@ footer {
     height: 2rem;
     background-color: #a306b6;
     font-weight: bold;
+
+    
 }

@@ -27,9 +27,12 @@ function previous() {
     const scrollLeft = sliderContent.scrollLeft;
     const itemsSlider = sliderContent.querySelectorAll('.slider__content__item');
 
-    if(scrollLeft == 0); {
-        sliderContent.scrollLeft = widthSlider * (itemsSlider.length - 1);
+    if(scrollLeft == widthSlider) {
+        document.querySelector('.slider__nav__button__prev').style.display = 'none';
+    } else {
+        document.querySelector('.slider__nav__button__next').style.display = 'block';
     }
+
 }
 
 function next() {
@@ -39,7 +42,19 @@ function next() {
     const scrollLeft = sliderContent.scrollLeft;
     const itemsSlider = sliderContent.querySelectorAll('.slider__content__item');
 
-    if(scrollLeft == widthSlider * (itemsSlider.length - 1)) {
-        sliderContent.scrollLeft = 0;
+    if(scrollLeft == widthSlider * (itemsSlider.length - 2)) {
+    } else {
+        document.querySelector('.slider__nav__button__prev').style.display = 'block';
     }
+
 }
+
+//Main function
+
+
+function changeColorBody () {
+    const background = document.querySelector('.container');
+    
+}
+
+
