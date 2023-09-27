@@ -1,35 +1,202 @@
+:root{
+    background-color: #FBFFF1;
+}
 * {
     font-family:'Open Sans';
     text-decoration: none;
     list-style: none;
     padding: 0px;
     margin: 0px;
-    background-color: #FBFFF1;
+
 }
 
-
+/* NAVBAR */
 
 nav {
     display:flex;
-    justify-content: space-around;
-    width: 100%;
+    justify-content: space-between;
+
 }
-nav h1{
-   display: flex;
-   align-items: center;
-}
-ul{
+
+#title_navbar{
     display: flex;
+    flex-direction: column;
+    justify-content: center;
     align-items: center;
-    gap: 2rem;
+    
+    
 }
 
 #wcsLogo{
+    height: 10%;
     width: 10%;
+    margin-right: 2%;
+}
+.active {
+    color: #C2AFF0;
+
+
+  }
+ul {
+    display: flex;
+    align-items: center;
+    gap: 4rem;
+    margin-left: 2%;
+
 }
 
 
-.slider__nav{
-display : flex;
+nav ul a {
+    color: #000000;
+
+}
+
+
+div h1{
+    font-size: 32px;
+    font-family: 'Open Sans extrabold';
+
     
+}
+div h2{
+    font-family: 'Open Sans extrabold';
+}
+/* CAROUSEL */
+
+.slider {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2rem;
+    height: 180px;
+    max-width: 180px;
+    position: relative;
+}
+
+.slider__nav__button__next {
+    right: 10px;
+}
+
+.slider__nav__button__prev {
+    left: 10px;    
+}
+
+.slider__nav__button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    transition: 0.3 all ease-in-out;
+}
+
+.slider__nav__button:hover {
+    transform: translateY(-50%) scale(1.1);
+}
+
+.slider__nav__button {
+    background-color: transparent;
+    border: none;
+}
+
+
+.slider__nav__button svg {
+    width: 20px;
+    height: 20px;
+}
+
+.slider__nav__button svg path{
+    stroke: #FBFFF1;
+}
+
+.slider__content {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    overflow: hidden;
+    scroll-behavior: smooth;
+}
+
+.slider__content__item {
+    height: 100%;
+    min-width: 100%;
+}
+
+.slider__content__item img {
+    height: 100%;
+    width: 100%;
+}
+
+
+
+/* MAIN */
+/* SEARCH BAR */
+.search-bar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 2.5rem;
+    width: 15%;
+    text-align: center;
+    background-color: #C2AFF0;
+    border-radius: 2rem;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5rem;
+}
+.search-bar input[type=text] {
+    display: flex;
+    border: none;
+    background-color: transparent;
+    width: 80%;
+}
+
+.search-bar input:focus {
+    outline: none;
+}
+.search-bar button {
+    width:2rem;
+    border: none;
+    background-color: transparent
+}
+
+.search-bar img {
+    display: flex;
+    justify-content: flex-end;
+    height: 75%;
+    width: 80%;
+    background-color: transparent;
+    margin: auto;
+}
+/* CONTAINER */
+section {
+    margin-top: 3rem;
+}
+section.container{
+    justify-content: center;
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+
+}
+section.container img{
+    max-width: 180px;
+    max-height: 180px;
+    border-radius: 50%;
+}
+section.container div{
+    display: flex;
+    justify-content: center;
+}
+
+/* FOOTER */
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 2rem;
+    background-color: #a306b6;
+    font-weight: bold;
 }

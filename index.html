@@ -4,46 +4,123 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href='https://fonts.googleapis.com/css?family=Open Sans' rel='stylesheet'>
-    <script src="script.js"></script>
+    
     
     <title>Trombinoscope</title>
 </head>
 <header>
     <nav>
-        <ul>
-            <li>Carousel</li>
-            <li>Photos</li>
-            <li>Contact</li>
+        <ul id="navbar_list">
+            <li><a href="#">Accueil</a></li>
+            <li><a href="#">Wilders</a></li>
+            <li><a href="#">Contact</a></li>
         </ul>
-           
-        <h1>TROMBINOSCOPE SACOD</h1>
+        <div id="title_navbar">
+            <h1>TROMBINOSCOPE</h1>
+            <h2> SACOD</h2>
+        </div>  
+        
+       
         
         <img src = "images/original.png" id="wcsLogo">
     </nav>
 </header>
 
 <body>
+    
     <div class="slider">
-    <div class="slider__nav">
-        <button class="slider__nav__button slider__nav__button__prev">Précédent</button>
-        <button class="slider__nav__button slider__nav__button__next">Suivant</button>
-
-        <div class="slider__content__item">
-            <img src="images/Baptiste_Save.jpg">
+        <div class="slider__nav">
+            <button onclick="previous()" class="slider__nav__button slider__nav__button__prev"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M11.25 9l-3 3m0 0l3 3m-3-3h7.5M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+              </svg>
+              
+              </button>
+            <button onclick="next()" class="slider__nav__button slider__nav__button__next"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M12.75 15l3-3m0 0l-3-3m3 3h-7.5M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+              </svg>
+              
+              </button>
         </div>
-        <div class="slider__content__item">
+
+        <div class="slider__content">
+            <div class="slider__content__item">
+                <img src="images/Baptiste_Save.jpg">
+            </div>
+        
+            <div class="slider__content__item">
+                <img src="images/Morgane_Debarge.jpg">
+            </div>
+       
+            <div class="slider__content__item">
+                <img src="images/Baris_Gunay.jpg">
+            </div>
+
+            <div class="slider__content__item">
+                <img src="images/Sebastien_lacour.jpg">
+            </div>
+        </div>
+    </div>
+
+    
+    <div class="search-bar">
+        <input type="text" placeholder="Search name..", name"Jordan">
+        <button type="submit"><img src="images/🦆 icon _search_.png" alt="Bouton recherche"></i></button> 
+        
+    </div>  
+    
+    <main>
+        <section class="container">
+           <div>
+             <img src="images/Anthony_Gorski.png">
+           </div>
+           <div>
+            <img src="images/Clement_Femenias.jpg">
+          </div>
+          <div>
+            <img src="images/Diogo_CABRAL.png">
+          </div>
+          <div>
+            <img src="images/Doriane_ML.jpg">
+          </div>
+          <div>
+            <img src="images/Elie_Rakoto.jpg">
+          </div>
+          <div>
+            <img src="images/Flavien_GAUJARD.jpg">
+          </div>
+          <div>
+            <img src="images/Francois_Creutzer.jpg">
+          </div>
+          <div>
+            <img src="images/Ghislain_Pellicano.jpg">
+          </div>
+          <div>
+            <img src="images/Jordan_Mieger.jpeg">
+          </div>
+          <div>
+            <img src="images/Mehdi Mehemel.jpg">
+          </div>
+          <div>
             <img src="images/Morgane_Debarge.jpg">
-        </div>
-        <div class="slider__content__item">
-            <img src="images/Baris_Gunay.jpg">
-        </div>
-        <div class="slider__content__item">
+          </div>
+          <div>
+            <img src="images/Oceane Lahoual.jpeg">
+          </div>
+          <div>
+            <img src="images/Tristan_Zvunka.jpg">
+          </div>
+          <div>
+            <img src="images/Samuel_Faber.jpg">
+          </div>
+          <div>
             <img src="images/Sebastien_lacour.jpg">
-        </div>
-    </div>
-    </div>
+          </div>
+        </section>
 
-    <p>  </p>
+    </main>
+<script src="script.js"></script>
 </body>
+<footer>&copy; Oro Jackson - P1</footer>
 </html>
