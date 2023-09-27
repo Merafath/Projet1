@@ -43,6 +43,7 @@ function next() {
     const itemsSlider = sliderContent.querySelectorAll('.slider__content__item');
 
     if(scrollLeft == widthSlider * (itemsSlider.length - 2)) {
+       document.querySelector(' .slider__nav__button__next').style.display = 'none';
     } else {
         document.querySelector('.slider__nav__button__prev').style.display = 'block';
     }
@@ -52,9 +53,32 @@ function next() {
 //Main function
 
 
-function changeColorBody () {
-    const background = document.querySelector('.container');
-    
-}
+//function changeColorBody () {
+   // const background = document.querySelector('.changeColor');
+    //background.style.backgroundColor = 'white';
+//}   
 
+//const backgroundBody = document.querySelector('.container');
+//backgroundBody.addEventListener(click, changeColorBody);
+7µ£
+
+
+
+//barre de recherche
+
+function search_wilder() {
+    let input = document.getElementById('search-bar').value;
+    let x = document.getElementsByClassName('people');
+
+      
+    for (i = 0; i < x.length; i++) { 
+        if (!x[i].outerHTML.includes(input)) {
+            x[i].style.display="none";
+            console.log("marche pas")
+        }
+        else {
+            console.log("test")              
+        }
+    }
+}
 
