@@ -60,24 +60,24 @@ function next() {
 
 //const backgroundBody = document.querySelector('.container');
 //backgroundBody.addEventListener(click, changeColorBody);
-7µ£
+
 
 
 
 //barre de recherche
 
 function search_wilder() {
-    let input = document.getElementById('search-bar').value;
-    let x = document.getElementsByClassName('people');
+    let input = document.getElementById('search-bar-input').value;
+    input=input.toLowerCase();
+    let wilders = document.getElementsByClassName('people');
 
       
-    for (i = 0; i < x.length; i++) { 
-        if (!x[i].outerHTML.includes(input)) {
-            x[i].style.display="none";
-            console.log("marche pas")
+    for (i = 0; i < wilders.length; i++) { 
+        if (wilders[i].innerHTML.toLowerCase().includes(input)) {
+            wilders[i].style.display="";
         }
         else {
-            console.log("test")              
+            wilders[i].style.display="none";            
         }
     }
 }
