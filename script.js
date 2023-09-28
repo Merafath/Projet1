@@ -53,15 +53,12 @@ function next() {
 //Main function
 
 
-//function changeColorBody () {
-   // const background = document.querySelector('.changeColor');
-    //background.style.backgroundColor = 'white';
-//}   
+const body = document.body;
+const changeColor = document.querySelector(".container");
 
-//const backgroundBody = document.querySelector('.container');
-//backgroundBody.addEventListener(click, changeColorBody);
-
-
+changeColor.addEventListener("click", function() {
+    body.classList.toggle(".light");
+});
 
 
 //barre de recherche
