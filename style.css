@@ -10,6 +10,7 @@
     list-style: none;
     padding: 0px;
     margin: 0px;
+
 }
 
 html {
@@ -19,6 +20,7 @@ html {
 
 body{
     background: linear-gradient(30deg, var(--secondarycolor),var(--primarycolor) ); 
+    opacity: 1;
 }
 
 
@@ -28,7 +30,6 @@ body{
 nav {
     display:flex;
     justify-content: space-between;
-  
 
 }
 
@@ -37,8 +38,8 @@ nav {
     flex-direction: column;
     align-items: center;
     margin-right: 9%;
-    
-    
+
+
 }
 nav a{
     
@@ -47,9 +48,11 @@ nav a{
 width: 50%;
 margin-left: 40%;
 
+
 }
 .active {
     color: #227C9D;
+
   }
 
 
@@ -63,10 +66,12 @@ ul {
 
 li {
     font-weight: bold;
+
 }
 
 nav ul a {
     color: #000000;
+
     
 }
 
@@ -76,11 +81,11 @@ div h1{
     font-size: 32px;
     font-family: 'Open Sans extrabold';
 
-    
 }
 div h2{
    
     font-family: 'Open Sans extrabold';
+
 }
 /* CAROUSEL */
 
@@ -91,14 +96,17 @@ div h2{
     height: 180px;
     max-width: 180px;
     position: relative;
+
 }
 
 .slider__nav__button__next {
     right: 10px;
+
 }
 
 .slider__nav__button__prev {
-    left: 10px;    
+    left: 10px;  
+  
 }
 
 .slider__nav__button {
@@ -107,15 +115,18 @@ div h2{
     transform: translateY(-50%);
     cursor: pointer;
     transition: all ease-in-out;
+
 }
 
 .slider__nav__button:hover {
     transform: translateY(-50%) scale(1.1);
+
 }
 
 .slider__nav__button {
     background-color: transparent;
     border: none;
+
 }
 
 
@@ -149,6 +160,8 @@ div h2{
 
 
 /* MAIN */
+
+
 /* SEARCH BAR */
 #search-bar {
     display: flex;
@@ -176,7 +189,7 @@ div h2{
 #search-bar button {
     width:2rem;
     border: none;
-    background-color: transparent
+    background-color: transparent;
 }
 
 #search-bar img {
@@ -190,6 +203,29 @@ div h2{
 
 
 /* CONTAINER */
+
+
+.media-imgs {
+    cursor: pointer;
+
+}
+
+
+#overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.85); 
+    display: none;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+
+}
+
+
+
 section {
     margin-top: 3rem;
 }
@@ -200,11 +236,9 @@ section.container{
     grid-template-rows: 1fr 1fr 1fr 1fr;
     grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
     margin-bottom: 100px;
-
-
 }
 
-section.container div{
+section.container .people{
     display: flex;
     margin-left: 10%;
     
@@ -228,12 +262,13 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
-    position: fixed;
     bottom: 0;
     width: 100%;
     height: 2rem;
     background-color: #a306b6;
     font-weight: bold;
+    position: fixed;
+    z-index: 10;
 
     
 }

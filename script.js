@@ -51,14 +51,26 @@ function next() {
 }
 
 //Main function
+const overlay = document.getElementById("overlay");
+const people = document.querySelectorAll(".media-imgs");
 
-
-const body = document.body;
-const changeColor = document.querySelector(".container");
-
-changeColor.addEventListener("click", function() {
-    body.classList.toggle(".light");
+for (let i=0; i<people.length; i++){
+    people[i].addEventListener("click", function(){
+        overlay.style.display = "block";
+        setTimeout(function () {
+        overlay.style.opacity = "1";
+    },10);
+ 
 });
+
+overlay.addEventListener("click", function () {
+    overlay.style.opacity = "0";
+    setTimeout(function () {
+        overlay.style.display = "none";
+    }, 300);
+});
+}
+
 
 
 //barre de recherche
