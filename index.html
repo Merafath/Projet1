@@ -4,8 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link href='https://fonts.googleapis.com/css?family=OpenSans' rel='stylesheet'>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
     
     
     <title>Trombinoscope</title>
@@ -13,13 +15,12 @@
 
 
 <body class="color">
-  
     <header>
         <nav>
             <ul id="navbar_list">
-                <li><a href="#accueil">Accueil</a></li>
-                <li><a href="#wilders">Wilders</a></li>
-                <li><a href="#contact">Contact</a></li>
+                <li><a href="#">Accueil</a></li>
+                <li><a href="#search-bar">Wilders</a></li>
+                <li><a href="#button-contact">Contact</a></li>
             </ul>
             <div id="title_navbar">
                 <h1 id="accueil">TROMBINOSCOPE</h1>
@@ -28,39 +29,39 @@
             
            
             
-            <a target="_blank" href="https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstley"><img src = "images/original.png" alt="Logo Wild Code School" id="wcsLogo" ></a>
+            <a target="_blank" href="https://www.wildcodeschool.com/fr-fr/"><img src = "images/original.png" alt="Logo Wild Code School" id="wcsLogo" ></a>
         </nav>
     </header>
     
     <div class="slider">
         <div class="slider__nav">
             <button onclick="previous()" style="display: none" class="slider__nav__button slider__nav__button__prev"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
-                <path stroke-linecap="round" stroke-linejoin="round" d="M11.25 9l-3 3m0 0l3 3m-3-3h7.5M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
-              </svg>
-              
-              </button>
+              <path stroke-linecap="round" stroke-linejoin="round" d="M11.25 9l-3 3m0 0l3 3m-3-3h7.5M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+            </svg>
+            
+            </button>
             <button onclick="next()" class="slider__nav__button slider__nav__button__next"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
-                <path stroke-linecap="round" stroke-linejoin="round" d="M12.75 15l3-3m0 0l-3-3m3 3h-7.5M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
-              </svg>
-              
-              </button>
+              <path stroke-linecap="round" stroke-linejoin="round" d="M12.75 15l3-3m0 0l-3-3m3 3h-7.5M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+            </svg>
+            
+            </button>
         </div>
-
-        <div class="slider__content">
+    
+        <div class="slider__content">          
             <div class="slider__content__item">
-                <img src="/images/Ghislain_Pellicano.png" alt="">
-            </div>
-        
-            <div class="slider__content__item">
-                <img src="images/Jordan_Mieger.png" alt="">
-            </div>
-       
-            <div class="slider__content__item">
-                <img src="images/Jérémy_Illien.png" alt="">
+              <img src="images/Ghislain_Pellicano.png" alt="">                                
             </div>
 
             <div class="slider__content__item">
-                <img src="images/Diogo_CABRAL.png" alt="">
+              <img src="images/Jordan_Mieger.png" alt="">
+            </div>
+            
+            <div class="slider__content__item">
+              <img src="images/Jérémy_Illien.png" alt="">
+            </div>
+            
+            <div class="slider__content__item">
+              <img src="images/Diogo_CABRAL.png" alt="">
             </div>
         </div>
     </div>
@@ -136,7 +137,39 @@
         </section>
         
      </main>
-     <div id="overlay"></div>
+     <div id="overlay">
+        <div class ="overlay-content">
+        <span class="close">&times;</span>
+        <img src="" alt="">
+        <p>On test des trucs</p>
+        </div>
+     </div>
+
+
+
+
+
+      <section id="button-contact" class="button-contact">
+        <button data-contact-target="#contact">Formulaire de contact</button>
+        <section id="contact" class="contact">
+        <div class="contact-header">
+          <div class="contact-titre">Formulaire de contact</div>
+            <button data-close-button class="close-button">&times;</button>
+          </div>
+          <div class="contact-body">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate quibusdam totam dolores, culpa enim iusto assumenda quam nemo, veniam, aspernatur ipsam? Eaque, deleniti. Magnam quidem dolor necessitatibus tempore a aperiam vero, accusamus ut perferendis placeat dolore? Nam sed voluptatem quis commodi dicta, sunt quaerat quae praesentium mollitia nemo accusamus deserunt. Quod ipsam quidem itaque fugiat numquam in harum adipisci blanditiis sed facere quibusdam nihil eveniet fugit facilis laudantium quae error assumenda distinctio accusantium, voluptatibus voluptatum aut, excepturi voluptatem odit. Voluptas?
+          </div>
+          <div id="overlay-contact"></div>    
+        </section>
+      </section>
+          
+          
+        
+
+
+    
+
+
     <footer> &copy; Oro Jackson - P1 </footer>
     <script src="script.js"></script>
 </body>

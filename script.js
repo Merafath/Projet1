@@ -13,9 +13,13 @@ navbarList.forEach(list =>{
     });
 });
 
+// Sticky navbar
 
+    window.addEventListener("scroll", function() {
+        var header = this.document.querySelector("header");
+        header.classList.toggle("sticky", window.scrollY > 0);
 
-
+    })
 
 // carousel function
 
@@ -53,6 +57,7 @@ function next() {
 //Main function
 const overlay = document.getElementById("overlay");
 const people = document.querySelectorAll(".media-imgs");
+let span = document.getElementsByClassName("close")[0];
 
 for (let i=0; i<people.length; i++){
     people[i].addEventListener("click", function(){
@@ -60,6 +65,7 @@ for (let i=0; i<people.length; i++){
         setTimeout(function () {
         overlay.style.opacity = "1";
     },10);
+    
  
 });
 
@@ -70,6 +76,10 @@ overlay.addEventListener("click", function () {
     }, 300);
 });
 }
+
+
+
+
 
 
 
@@ -90,4 +100,56 @@ function search_wilder() {
         }
     }
 }
+
+
+
+//Infos wilders
+
+
+function infosWilders() {
+    const wilders = document.getElementsByClassName('people');
+    const content = document.getElementsByClassName('overlay-content');
+    
+    for (let i = 0; i < wilders.length; i++) {
+        if (wilders[i].addEventListener('click'), function() {
+            wilders[i].innerHTML.style.display = "";
+            content.style.display = "block";
+        });
+    };
+};
+
+
+//Formulaire de contact
+
+const openContactButtons = document.querySelectorAll('[data-contact-target]')
+const closeContactButtons = document.querySelectorAll('[data-close-button]')
+const overlayContact = document.getElementById('overlay-contact')
+
+openContactButtons.forEach(button => {
+    button.addEventListener('click' , () => {
+        const contact = document.querySelector(button.dataset.contactTarget)
+        openContact(contact);
+    })
+})
+
+closeContactButtons.forEach(button => {
+    button.addEventListener('click' , () => {
+        const contact = button.closest('.contact')
+        closeContact(contact);
+    })
+})
+
+function openContact(contact) {
+    if (contact == null) return
+    contact.classList.add('active-contact');
+    overlayContact.style.display = "block" ;
+}
+
+function closeContact(contact) {
+    if (contact == null) return
+    contact.classList.remove('active-contact');
+    overlayContact.style.display = "none";
+}
+
+
 
