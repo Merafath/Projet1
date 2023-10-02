@@ -10,7 +10,7 @@ const wildersArray = [
         linkedin : "https://www.linkedin.com/in/anthony-gorski/",
         github : "https://github.com/GorskiAnthony",
     }
-
+,
     {
         photo : "images/Clement_Femenias.png",
         nom : "FEMENIAS",
@@ -22,6 +22,7 @@ const wildersArray = [
         linkedin : "https://www.linkedin.com/in/clement-femenias-5b7471279/",
         github : "https://github.com/PinpinLaToupie",
     }
+,
     {
         photo : "images/Diogo_CABRAL.png",
         nom : "CABRAL",
@@ -33,6 +34,7 @@ const wildersArray = [
         linkedin : "",
         github : "https://github.com/diogo596",
     }
+,
     {
         photo : "images/Doriane_ML.png",
         nom : "MULLER LEVEQUE" ,
@@ -44,6 +46,7 @@ const wildersArray = [
         linkedin : "https://www.linkedin.com/in/doriane-muller-leveque-898237a9",
         github : "https://github.com/Doriane23",
     }
+,
     {
         photo : "images/Elie_Rakoto.png",
         nom : "RAKOTO" ,
@@ -55,6 +58,7 @@ const wildersArray = [
         linkedin : "",
         github : "",
     }
+,
     {
         photo : "images/Flavien_GAUJARD.png",
         nom : "GAUJARD" ,
@@ -66,8 +70,9 @@ const wildersArray = [
         linkedin : "https://www.linkedin.com/in/flavien-gaujard/",
         github : "https://github.com/fgaujard",
     }
+,
     {
-        photo : "images/François_Creutzer.png"
+        photo : "images/François_Creutzer.png",
         nom : "CREUTZER" ,
         prenom : "François",
         age : "39 ans",
@@ -77,6 +82,7 @@ const wildersArray = [
         linkedin : "",
         github : "https://github.com/francoiscrtz",
     }
+,
     {
         photo : "images/Baris_Gunay.png",
         nom : "GUNAY" ,
@@ -91,6 +97,7 @@ const wildersArray = [
         twitter : "",
         facebook : "",
     }
+,
     {
         photo : "images/Baptiste_Save.png",
         nom : "SAVE" ,
@@ -105,6 +112,7 @@ const wildersArray = [
         twitter : "https://twitter.com/batsave",
         facebook : "https://facebook.com/Baptiste.Save.79",
     }
+,
     {
         photo : "images/Mehdi_Mehemel.png",
         nom : "MEHEMEL" ,
@@ -119,6 +127,7 @@ const wildersArray = [
         twitter : "https://twitter.com/Mehdiarmando",
         facebook : "https://www.facebook.com/mehdiarmando",
     }
+,
     {
         photo : "images/Morgane_Debarge.png",
         nom : "DEBARGE" ,
@@ -130,9 +139,10 @@ const wildersArray = [
         linkedin : "",
         github : "",
     }
+,
     {
         photo : "images/Oceane_Lahoual.png",
-        nom : "LAHOUAL" ,
+        nom : "LAHOUAL",
         prenom : "Océane",
         age : "27 ans",
         objpro : "Devenir Déesse de la magie ",
@@ -141,6 +151,7 @@ const wildersArray = [
         linkedin : "https://www.linkedin.com/in/oc%C3%A9ane-l-b6312618a/",
         github : "https://github.com/Midunighto",
     }
+,
     {
         photo : "images/Tristan_Zvunka.png",
         nom : "ZVUNKA" ,
@@ -152,6 +163,7 @@ const wildersArray = [
         linkedin : "",
         github : "",
     }
+,
     {
         photo : "images/Samuel_Faber.png",
         nom : "FABER" ,
@@ -166,9 +178,10 @@ const wildersArray = [
         twitter : "",
         facebook : "",
     }
+,
     {
         photo : "images/Sebastien_lacour.png",
-        nom : "LACOUR" ,
+        nom : "LACOUR",
         prenom : "Sébastien",
         age : "37 ans",
         objpro : "Gonfleur de roue de train",
@@ -180,9 +193,68 @@ const wildersArray = [
         twitter : "",
         facebook : "",
     }
-    
+,
+    {
+        photo : "images/Pierre_Colpart.png",
+        nom : "COLPART" ,
+        prenom : "Pierre",
+        age : "32 ans",
+        objpro : "Développeur",
+        hobbies : "jeux/sport",
+        citation : "",
+        linkedin : "",
+        github : "",
+    }
+,
+    {
+        photo : "images/Raphael_Foulon_Binet.png",
+        nom : "FOULON-BINET" ,
+        prenom : "Raphaël",
+        age : "18 ans",
+        objpro : "Devenir développeur backend principalement Fullstack",
+        hobbies : "Animés, Manga, jeux-video, développement",
+        citation : "",
+        linkedin : "https://www.linkedin.com/in/raphael-foulon-binet-575aa8290/",
+        github : "https://github.com/Rapha2202",
+    }
+,
+    {
+        photo : "images/Christophe_Bruno.png",
+        nom : "BRUNO" ,
+        prenom : "Christophe",
+        age : "43 ans",
+        objpro : "Reconversion en tant que développeur web",
+        hobbies : "Sport(basket US, course à pieds), musique, cinema, Tolkien",
+        citation : "Qui ne sait être fou n'est pas sage",
+        linkedin : "",
+        github : "https://github.com/Chrisbrn2625",
+    }
+,
+    {
+        photo : "images/Hugo_Durand.png",
+        nom : "DURANT" ,
+        prenom : "Hugo",
+        age : "23 ans",
+        objpro : "Trouver un emploi dans le développement",
+        hobbies : "Le gaming, les champions de jeux de combat et les animés/mangas",
+        citation : "",
+        linkedin : "",
+        github : "https://github.com/Palutenya",
+    }
+,
+    {
+        photo : "images/Jonathan_Bernard.png",
+        nom : "BERNARD" ,
+        prenom : "Jonathan",
+        age : "34 ans",
+        objpro : "Dev' des trucs",
+        hobbies : "Jeux video et bière",
+        citation : "L'éternité c'est long surtout vers la fin",
+        linkedin : "https://www.linkedin.com/in/jonathan-bernard-250733290/",
+        github : "https://github.com/Jonathan-Bernard",
+    }   
+]
 
 
-    
-]
-]
+
+export default wildersArray;
