@@ -1,18 +1,18 @@
 const wildersArray = [
     {
-        photo : "images/Anthony_Gorski.png",
+        photo : "images/Anthony_card.png",
         nom : "GORSKI",
         prenom : "Anthony",
         age : "31 ans",
         objpro : "Être comme Benoît ❤️",
         hobbies : "Échecs, Manga",
-        citation : "Je rigole !",
+        citation : "",
         linkedin : "https://www.linkedin.com/in/anthony-gorski/",
         github : "https://github.com/GorskiAnthony",
     }
 ,
     {
-        photo : "images/Clement_Femenias.png",
+        photo : "images/Clement_card.png",
         nom : "FEMENIAS",
         prenom : "Clément",
         age : "32 ans",
@@ -24,7 +24,7 @@ const wildersArray = [
     }
 ,
     {
-        photo : "images/Diogo_CABRAL.png",
+        photo : "images/Diogo_card.png",
         nom : "CABRAL",
         prenom : "Diogo",
         age : "35 ans",
@@ -36,7 +36,7 @@ const wildersArray = [
     }
 ,
     {
-        photo : "images/Doriane_ML.png",
+        photo : "images/Doriane_card.png",
         nom : "MULLER LEVEQUE" ,
         prenom : "Doriane",
         age : "30 ans",
@@ -48,7 +48,7 @@ const wildersArray = [
     }
 ,
     {
-        photo : "images/Elie_Rakoto.png",
+        photo : "images/Elie_card.png",
         nom : "RAKOTO" ,
         prenom : "Elie",
         age : "30 ans",
@@ -60,7 +60,7 @@ const wildersArray = [
     }
 ,
     {
-        photo : "images/Flavien_GAUJARD.png",
+        photo : "images/Flavien_card.png",
         nom : "GAUJARD" ,
         prenom : "Flavien",
         age : "23 ans",
@@ -72,7 +72,7 @@ const wildersArray = [
     }
 ,
     {
-        photo : "images/François_Creutzer.png",
+        photo : "images/Francois_card.png",
         nom : "CREUTZER" ,
         prenom : "François",
         age : "39 ans",
@@ -84,7 +84,7 @@ const wildersArray = [
     }
 ,
     {
-        photo : "images/Baris_Gunay.png",
+        photo : "images/Baris_card.png",
         nom : "GUNAY" ,
         prenom : "Baris",
         age : "27 ans",
@@ -99,7 +99,7 @@ const wildersArray = [
     }
 ,
     {
-        photo : "images/Baptiste_Save.png",
+        photo : "images/Baptiste_card.png",
         nom : "SAVE" ,
         prenom : "Baptiste",
         age : "24 ans",
@@ -114,7 +114,7 @@ const wildersArray = [
     }
 ,
     {
-        photo : "images/Mehdi_Mehemel.png",
+        photo : "images/Mehdi_card.png",
         nom : "MEHEMEL" ,
         prenom : "Mehdi",
         age : "37 ans",
@@ -129,7 +129,7 @@ const wildersArray = [
     }
 ,
     {
-        photo : "images/Morgane_Debarge.png",
+        photo : "images/Morgane_card.png",
         nom : "DEBARGE" ,
         prenom : "Morgane",
         age : "29 ans",
@@ -141,7 +141,7 @@ const wildersArray = [
     }
 ,
     {
-        photo : "images/Oceane_Lahoual.png",
+        photo : "images/Oceane_card.png",
         nom : "LAHOUAL",
         prenom : "Océane",
         age : "27 ans",
@@ -153,7 +153,7 @@ const wildersArray = [
     }
 ,
     {
-        photo : "images/Tristan_Zvunka.png",
+        photo : "images/Tristan_card.png",
         nom : "ZVUNKA" ,
         prenom : "Tristan",
         age : "30 ans",
@@ -165,7 +165,7 @@ const wildersArray = [
     }
 ,
     {
-        photo : "images/Samuel_Faber.png",
+        photo : "images/Samuel_card.png",
         nom : "FABER" ,
         prenom : "Samuel",
         age : "38 ans",
@@ -180,7 +180,7 @@ const wildersArray = [
     }
 ,
     {
-        photo : "images/Sebastien_lacour.png",
+        photo : "images/Sebastien_card.png",
         nom : "LACOUR",
         prenom : "Sébastien",
         age : "37 ans",
@@ -195,7 +195,7 @@ const wildersArray = [
     }
 ,
     {
-        photo : "images/Pierre_Colpart.png",
+        photo : "images/Pierre_card.png",
         nom : "COLPART" ,
         prenom : "Pierre",
         age : "32 ans",
@@ -207,7 +207,7 @@ const wildersArray = [
     }
 ,
     {
-        photo : "images/Raphael_Foulon_Binet.png",
+        photo : "images/Raphael_card.png",
         nom : "FOULON-BINET" ,
         prenom : "Raphaël",
         age : "18 ans",
@@ -219,7 +219,7 @@ const wildersArray = [
     }
 ,
     {
-        photo : "images/Christophe_Bruno.png",
+        photo : "images/Christophe_card.png",
         nom : "BRUNO" ,
         prenom : "Christophe",
         age : "43 ans",
@@ -231,7 +231,7 @@ const wildersArray = [
     }
 ,
     {
-        photo : "images/Hugo_Durand.png",
+        photo : "images/Hugo_card.png",
         nom : "DURANT" ,
         prenom : "Hugo",
         age : "23 ans",
@@ -243,7 +243,7 @@ const wildersArray = [
     }
 ,
     {
-        photo : "images/Jonathan_Bernard.png",
+        photo : "images/Jonathan_card.png",
         nom : "BERNARD" ,
         prenom : "Jonathan",
         age : "34 ans",
@@ -253,7 +253,44 @@ const wildersArray = [
         linkedin : "https://www.linkedin.com/in/jonathan-bernard-250733290/",
         github : "https://github.com/Jonathan-Bernard",
     }   
-]
+,
+    {
+        photo : "images/Ghislain_card.png",
+        nom : "PELLICANO" ,
+        prenom : "Ghislain",
+        age : "27 ans",
+        objpro : "Mon objectif est d'intégrer une entreprise en tant que développeur web junior ou en tant qu'alternant à la fin de la formation. L'idéal serait de trouver autour de moi dans les landes ou le pays basque ! ",
+        hobbies : "Le surf, le ski/snowboard, les jeux vidéos, les films/séries, la musique",
+        citation : "Les doutes tuent plus de rêves que les échecs.",
+        linkedin : "https://www.linkedin.com/in/ghislain-pellicano-6735aa99/",
+        github : "https://github.com/ghispell",
+}
+,
+    {
+        photo : "images/Jordan_card.png",
+        nom : "MIEGER" ,
+        prenom : "Jordan",
+        age : "23 ans",
+        objpro : "Développeur full-stack en entreprise puis free-lance",
+        hobbies : "Sport, foot",
+        citation : "C'est quand un moustique se pose sur vos testicules qu'on s'aperçoit qu'on ne peut pas tout régler avec la violence...",
+        linkedin : "https://www.linkedin.com/in/jordan-mieger-44373a270",
+        github : "http://github.com/JordanMieger",
+    }
+,
+    {
+        photo : "images/Jérémy_card.png",
+        nom : "ILLIEN" ,
+        prenom : "Jérémy",
+        age : "26 ans",
+        objpro : "Freelance après une période d'entreprise",
+        hobbies : "la musique (basse électrique)",
+        citation : "à chaque problème sa solution!",
+        linkedin : "www.linkedin.com/in/jérémy-illien-380227291",
+        github : "https://github.com/Merafath",
+}
+,
+];
 
 
 

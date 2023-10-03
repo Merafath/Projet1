@@ -140,12 +140,10 @@ div h2{
 
 .slider__nav__button__next {
     right: 40px;
-
 }
 
 .slider__nav__button__prev {
     left: 40px;  
-  
 }
 
 .slider__nav__button {
@@ -174,7 +172,7 @@ div h2{
     height: 40px;
 }
 
-.slider__nav__button svg path{
+.slider__nav__button svg path {
     stroke: #FBFFF1;
 }
 
@@ -267,20 +265,60 @@ div h2{
 
 
 .overlay-content {
+    display: flex;
+    align-items: center;
+    gap: 3rem;
     position: relative;
     background-color: #feeaff;
     margin: auto;
     padding: 0;
     border-radius: 10px;
     margin-top: 10%;
-    width: 50%;
-    height: 45%;
+    width: 60%;
+    height:50%;
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
     -webkit-animation-name: animatetop;
     -webkit-animation-duration: 0.4s;
     animation-name: animatetop;
     animation-duration: 0.4s;
 
+}
+
+.photo {
+    margin-left: 5%;
+
+}
+.photo img {
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px, rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
+
+
+}
+
+.card-content {
+    display: flex;
+    flex-direction: column;
+    gap: 0.3rem;
+    width: 100%;
+}
+
+#objpro_wilder {
+    text-decoration: underline;
+}
+.card-content p{
+    padding-right: 10%;
+}
+
+#hobbies_wilder {
+    text-decoration: underline;
+}
+
+#citation_wilder {
+    text-decoration: underline;
+}
+.overlay-content a img{
+    width : 30px;
+    height: auto;
 }
 
 
@@ -343,75 +381,50 @@ img.media-imgs:hover{
 
 /* CONTACT */
 
-section.button-contact {
+.formulaire {
+    width: 100%;
+    height: 100vh;
+    margin-bottom: 10%;
     display: flex;
-    justify-content: center;
-    margin-bottom: 5%;
-    
-}
-.close-button {
-    cursor: pointer;
-    border:none;
-    outline: none;
-    background:none;
-    font-size: 1.5rem;
-    font-weight: bold;
-}
-.contact {
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%) scale(0);
-    transition: 200ms ease-in-out;
-    border: 2px solid black;
-    border-radius: 20px;
-    z-index: 1001;
-    background-color: white;
-    width: 500px;
-    max-width: 80%;
-}
-
-.contact.active {
-    transform: translate(-50%, -50%) scale(1);
-}
-
-.contact-header {
-    padding: 10px 15px;
-    display: flex;
-    justify-content: space-between;
     align-items: center;
-    border-bottom: 1px solid black;
+    justify-content: center;
 }
 
-.contact-titre {
+form {
+
+    display: flex;
+    flex-direction: column;
+    padding: 2vw 4vw;
+    width: 90%;
+    max-width: 600px;
+    border-radius: 10px;
+}
+
+form h4 {
+    font-weight: 800;
+    margin-bottom: 1rem;
+}
+
+form input, form textarea {
+    border: 0;
+    margin: 10px 0;
+    padding: 20px;
+    outline: none;
+    font-size: 1rem;
     
-    font-size: 1.5rem;
+}
+
+form button {
+    padding: 1rem;
+    background-color: #ff5361;
+    color: #fbfff1;
+    font-size: 1rem;
     font-weight: bold;
+    border: 0;
+    outline: none;
+    cursor: pointer;
+    border-radius: 2rem;
 }
-
-.contact-body {
-    padding: 10px 15px;
-}
-
-#overlay-contact{
-    position: fixed;
-    opacity: 0;
-    transition: 200ms ease-in-out;
-    top:0;
-    left:0;
-    right:0;
-    bottom:0;
-    background-color:rgba(255, 255, 255, 0.85);
-    pointer-events: none;
-    display: none;
-}
-
-#overlay-contact.active-contact {
-    opacity: 1;
-    pointer-events: all;
-}
-
-
 
 /* FOOTER */
 footer {
@@ -423,7 +436,6 @@ footer {
     height: 2rem;
     background-color: var(--footercolor);
     font-weight: bold;
-    position: fixed;
     z-index: 10;
     color: #FBFFF1;
 }

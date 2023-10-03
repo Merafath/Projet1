@@ -7,9 +7,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
-
-    
-    
+    <script defer type="module" src="script.js"></script> 
+        
     <title>Trombinoscope</title>
 </head>
 
@@ -19,31 +18,29 @@
         <nav>
             <ul id="navbar_list">
                 <li><a href="#">Accueil</a></li>
-                <li><a href="#search-bar">Wilders</a></li>
-                <li><a href="#button-contact">Contact</a></li>
+                <li><a href="#empty-div">Wilders</a></li>
+                <li><a href="#formulaire">Contact</a></li>
             </ul>
             <div id="title_navbar">
                 <h1 id="accueil">TROMBINOSCOPE</h1>
                 <h2> SACOD</h2>
             </div>  
-            
-           
-            
-            <a target="_blank" href="https://www.wildcodeschool.com/fr-fr/"><img src = "images/original.png" alt="Logo Wild Code School" id="wcsLogo" ></a>
+          <a target="_blank" href="https://www.wildcodeschool.com/fr-fr/"><img src = "images/original.png" alt="Logo Wild Code School" id="wcsLogo"></a>
         </nav>
     </header>
     
     <div class="slider">
         <div class="slider__nav">
-            <button onclick="previous()" style="display: none" class="slider__nav__button slider__nav__button__prev"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
-              <path stroke-linecap="round" stroke-linejoin="round" d="M11.25 9l-3 3m0 0l3 3m-3-3h7.5M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
-            </svg>
-            
+            <button style="display: none" class="slider__nav__button slider__nav__button__prev">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M11.25 9l-3 3m0 0l3 3m-3-3h7.5M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+              </svg>
             </button>
-            <button onclick="next()" class="slider__nav__button slider__nav__button__next"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
-              <path stroke-linecap="round" stroke-linejoin="round" d="M12.75 15l3-3m0 0l-3-3m3 3h-7.5M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
-            </svg>
             
+            <button class="slider__nav__button slider__nav__button__next">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M12.75 15l3-3m0 0l-3-3m3 3h-7.5M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+              </svg>
             </button>
         </div>
     
@@ -65,131 +62,164 @@
             </div>
         </div>
     </div>
-
+    <div id="empty-div"></div>
     <div id="search-bar">
-        <input type="text" onkeyup="search_wilder()" placeholder="🔎Search name.." name="name" id="search-bar-input">
-        
+        <input type="text" placeholder="🔎Search name.." name="name" id="search-bar-input">
     </div>  
     
     <main id="wilders">
         <section class="container">
-           <div class="people">
+          <div id="people" class="people">
              <img src="images/Anthony_Gorski.png" alt="" class="media-imgs">
              <h3>Anthony GORSKI</h3>
-           </div>
-           <div class="people">
+          </div>
+           
+          <div class="people">
             <img src="images/Clement_Femenias.png" alt="" class="media-imgs">
             <h3>Clement FEMENIAS</h3>
           </div>
+          
           <div class="people">
             <img src="images/Diogo_CABRAL.png" alt="" class="media-imgs">
             <h3>Diogo CABRAL</h3>
           </div>
+          
           <div class="people">
             <img src="images/Doriane_ML.png" alt="" class="media-imgs">
             <h3>Doriane MULLER LEVEQUE</h3>
           </div>
+          
           <div class="people">
             <img src="images/Elie_Rakoto.png" alt="" class="media-imgs">
             <h3>Elie RAKOTO</h3>
           </div>
+          
           <div class="people">
             <img src="images/Flavien_GAUJARD.png" alt="" class="media-imgs">
             <h3>Flavien GAUJARD</h3>
           </div>
+          
           <div class="people">
             <img src="images/Francois_Creutzer.png" alt="" class="media-imgs">
             <h3>François CREUTZER</h3>
           </div>
+          
           <div class="people">
             <img src="images/Baris_Gunay.png" alt="" class="media-imgs">
             <h3>Baris GUNAY</h3>
           </div>
+          
           <div class="people">
             <img src="images/Baptiste_Save.png" alt="" class="media-imgs">
             <h3>Baptiste SAVE</h3>
           </div>
+          
           <div class="people">
             <img src="images/Mehdi_Mehemel.png" alt="" class="media-imgs">
             <h3>Mehdi MEHEMEL</h3>
           </div>
+          
           <div class="people">
             <img src="images/Morgane_Debarge.png" alt="" class="media-imgs">
             <h3>Morgane DEBARGE</h3>
           </div>
+          
           <div class="people">
             <img src="images/Oceane_Lahoual.png" alt="" class="media-imgs">
             <h3>Oceane LAHOUAL</h3>
           </div>
+          
           <div class="people">
             <img src="images/Tristan_Zvunka.png" alt="" class="media-imgs">
             <h3>Tristan ZVUNKA</h3>
           </div>
+          
           <div class="people">
             <img src="images/Samuel_Faber.png" alt="" class="media-imgs">
             <h3>Samuel FABER</h3>
           </div>
+          
           <div class="people">
             <img src="images/Sebastien_lacour.png" alt="" class="media-imgs">
             <h3>Sebastien LACOUR</h3>
           </div>
+          
           <div class="people">
             <img src="images/Pierre_Colpart.png" alt="" class="media-imgs">
             <h3>Pierre COLPART</h3>
           </div>
+          
           <div class="people">
             <img src="images/Raphael_Foulon_Binet.png" alt="" class="media-imgs">
             <h3>Raphaël FOULON BINET</h3>
           </div>
+          
           <div class="people">
             <img src="images/Christophe_Bruno.png" alt="" class="media-imgs">
             <h3>Christophe BRUNO</h3>
           </div>
+          
           <div class="people">
             <img src="images/Hugo_Durand.png" alt="" class="media-imgs">
             <h3>Hugo DURAND</h3>
           </div>
+          
           <div class="people">
             <img src="images/Jonathan_Bernard.png" alt="" class="media-imgs">
             <h3>Jonathan BERNARD</h3>
           </div>
+          
+          <div class="people">
+            <img src="/images/Ghislain_Pellicano.png" alt="" class="media-imgs">
+            <h3>Ghislain PELLICANO</h3>
+          </div>
+          
+          <div class="people">
+            <img src="/images/Jordan_Mieger.png" alt="" class="media-imgs">
+            <h3>Jordan MIEGER</h3>
+          </div>
+          
+          <div class="people">
+            <img src="/images/Jérémy_Illien.png" alt="" class="media-imgs">
+            <h3>Jérémy ILLIEN</h3>
+          </div>
         </section>
         
      </main>
-     <div id="overlay">
-        <div class ="overlay-content">
-        <span class="close">&times;</span>
-        <img src="" alt="">
-        <div id ="prenomNom_wilders">Test</div>
-        </div>
+     
+     <div id="overlay"></div>
+     <div id="formulaire" class="formulaire">
+        <form onsubmit="sendEmail(); reset() return false;">
+          <h4>CONTACTEZ NOUS</h4>
+          <input type="text" id="name" placeholder="Name" required>
+          <input type="email" id="email" placeholder="Email" required>
+          <input type="text" id="phone" placeholder="Phone" required>
+          <textarea id="message" rows="4" placeholder="Message"></textarea>
+          <button type="submit">Send</button>
+
+        </form>
+
      </div>
-
-
-
-
-
-      <section id="button-contact" class="button-contact">
-        <button data-contact-target="#contact">Formulaire de contact</button>
-        <section id="contact" class="contact">
-        <div class="contact-header">
-          <div class="contact-titre">Formulaire de contact</div>
-            <button data-close-button class="close-button">&times;</button>
-          </div>
-          <div class="contact-body">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate quibusdam totam dolores, culpa enim iusto assumenda quam nemo, veniam, aspernatur ipsam? Eaque, deleniti. Magnam quidem dolor necessitatibus tempore a aperiam vero, accusamus ut perferendis placeat dolore? Nam sed voluptatem quis commodi dicta, sunt quaerat quae praesentium mollitia nemo accusamus deserunt. Quod ipsam quidem itaque fugiat numquam in harum adipisci blanditiis sed facere quibusdam nihil eveniet fugit facilis laudantium quae error assumenda distinctio accusantium, voluptatibus voluptatum aut, excepturi voluptatem odit. Voluptas?
-          </div>
-          <div id="overlay-contact"></div>    
-        </section>
-      </section>
-          
-          
-        
-
-
-    
-
-
+   
     <footer> &copy; Oro Jackson - P1 </footer>
-    <script src="script.js"></script>
+     <script src="https://smtpjs.com/v3/smtp.js"></script>
+     <script>
+        function sendEmail(){
+          Email.send({
+              Host : "smtp.elasticemail.com",
+              Username : "miegerjordan2000@gmail.com",
+              Password : "B022099D5F10F0A9916CC4BBBF5393864456",
+              To : "miegerjordan2000@gmail.com",
+              From : document.getElementById("email").value,
+              Subject : "New Contact Form Enquiry",
+              Body : "Name: " + document.getElementById("name").value
+                  + "<br> Email: " document.getElementById("email").value
+                  + "<br> Phone no: " document.getElementById("phone").value
+                  + "<br> Message: " document.getElementById("message").value
+          }).then(
+            message => alert("Message Sent Succesfully")
+          );
+        }
+     </script>
 </body>
 </html>
