@@ -7,7 +7,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
-    <script defer type="module" src="script.js"></script> 
+    
         
     <title>Trombinoscope</title>
 </head>
@@ -18,14 +18,16 @@
         <nav>
             <ul id="navbar_list">
                 <li><a href="#">Accueil</a></li>
-                <li><a href="#empty-div">Wilders</a></li>
+                <li><a href="#wildersList">Wilders</a></li>
                 <li><a href="#formulaire">Contact</a></li>
             </ul>
             <div id="title_navbar">
                 <h1 id="accueil">TROMBINOSCOPE</h1>
                 <h2> SACOD</h2>
-            </div>  
-          <a target="_blank" href="https://www.wildcodeschool.com/fr-fr/"><img src = "images/original.png" alt="Logo Wild Code School" id="wcsLogo"></a>
+            </div>
+            <div class="logo_WCS">
+              <a target="_blank" href="https://www.wildcodeschool.com/fr-fr/"><img src = "images/original.png" alt="Logo Wild Code School" id="wcsLogo"></a>
+            </div>
         </nav>
     </header>
     
@@ -62,7 +64,7 @@
             </div>
         </div>
     </div>
-    <div id="empty-div"></div>
+    <div id="wildersList"></div>
     <div id="search-bar">
         <input type="text" placeholder="🔎Search name.." name="name" id="search-bar-input">
     </div>  
@@ -189,37 +191,44 @@
      
      <div id="overlay"></div>
      <div id="formulaire" class="formulaire">
-        <form onsubmit="sendEmail(); reset() return false;">
+        <form>
           <h4>CONTACTEZ NOUS</h4>
-          <input type="text" id="name" placeholder="Name" required>
-          <input type="email" id="email" placeholder="Email" required>
-          <input type="text" id="phone" placeholder="Phone" required>
+          <input type="text" id="subject" placeholder="Objet" required>
+          <input type="text" id="name" placeholder="Nom" required>
+          <input type="text" id="phone" placeholder="Téléphone" required>
           <textarea id="message" rows="4" placeholder="Message"></textarea>
-          <button type="submit">Send</button>
-
+          <button type="button" class="mailButton" onclick="openPopup()">Envoyer</button>
+          
+      <div class="popup" id="popup">
+        <img src="images/valid.png" alt="checked">
+        <h5>Merci beaucoup !</h5>
+        <p>Votre message à bien été envoyé. Merci !</p>
+        <button type="button" onclick="closePopup()">OK</button>
+      </div>
         </form>
 
      </div>
    
     <footer> &copy; Oro Jackson - P1 </footer>
-     <script src="https://smtpjs.com/v3/smtp.js"></script>
      <script>
-        function sendEmail(){
-          Email.send({
-              Host : "smtp.elasticemail.com",
-              Username : "miegerjordan2000@gmail.com",
-              Password : "B022099D5F10F0A9916CC4BBBF5393864456",
-              To : "miegerjordan2000@gmail.com",
-              From : document.getElementById("email").value,
-              Subject : "New Contact Form Enquiry",
-              Body : "Name: " + document.getElementById("name").value
-                  + "<br> Email: " document.getElementById("email").value
-                  + "<br> Phone no: " document.getElementById("phone").value
-                  + "<br> Message: " document.getElementById("message").value
-          }).then(
-            message => alert("Message Sent Succesfully")
-          );
-        }
+/*     function sendEmail() {
+        var subject = document.getElementById("Subject").value;
+        var name = document.getElementById("name").value;
+        var phone = document.getElementById("phone").value;
+        var message = document.getElementById("message").value;
+        window.location.href = "mailto:miegerjordan2000@gmail.com?subject="+subject+"&name="+name+"&phone="+phone+"&message="+message;
+    } */
+
+    let popup = document.getElementById("popup")
+
+    function openPopup(){
+      popup.classList.add("open-popup")
+    }
+    function closePopup(){
+      popup.classList.remove("open-popup")
+    }
+
      </script>
+     <script type="module" src="script.js"></script> 
 </body>
 </html>

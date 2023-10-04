@@ -117,5 +117,3 @@ searchEl.addEventListener('keyup', search_wilder);
 //Formulaire de contact
 
 
-
-
